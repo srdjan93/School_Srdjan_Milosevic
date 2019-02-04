@@ -67,23 +67,28 @@ public class Student {
         return computer;
     }
 
-    public Student() {
-        this.firstName = "Srdjan";
-        this.lastName = "Milosevic";
-        this.yearOfBirth = 1993;
-    }
-
+//    public Student() {
+//        this.firstName = "Srdjan";
+//        this.lastName = "Milosevic";
+//        this.yearOfBirth = 1993;
+//    }
     public Student(String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
+    }
+    
+    public Student() {
+        this.course = new Course();
+        this.computer = new Computer();
     }
 
     public void info() {
         System.out.println("First name: " + this.firstName);
         System.out.println("Last name: " + this.lastName);
         System.out.println("Year of birth: " + this.yearOfBirth);
-
+        System.out.println("Year of birth: " + this.yearOfBirth);
+        
     }
 
 }
