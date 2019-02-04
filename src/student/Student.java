@@ -1,11 +1,15 @@
-
 package student;
 
+import course.Course;
+import computer.Computer;
 
 public class Student {
+
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    private Course course;
+    private Computer computer;
 
     /**
      * @return the firstName
@@ -49,25 +53,37 @@ public class Student {
         this.yearOfBirth = yearOfBirth;
     }
 
+    /**
+     * @return the course
+     */
+    public Course getCourse() {
+        return course;
+    }
+
+    /**
+     * @return the computer
+     */
+    public Computer getComputer() {
+        return computer;
+    }
+
     public Student() {
         this.firstName = "Srdjan";
         this.lastName = "Milosevic";
         this.yearOfBirth = 1993;
     }
-    
+
     public Student(String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
     }
-    
+
     public void info() {
         System.out.println("First name: " + this.firstName);
         System.out.println("Last name: " + this.lastName);
         System.out.println("Year of birth: " + this.yearOfBirth);
-          
-        
+
     }
-    
-    
+
 }
