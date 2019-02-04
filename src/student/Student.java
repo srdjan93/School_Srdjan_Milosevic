@@ -10,7 +10,6 @@ public class Student {
     private int yearOfBirth;
     private Course course;
     private Computer computer;
-
     /**
      * @return the firstName
      */
@@ -91,7 +90,7 @@ public class Student {
         System.out.println("Course number of classes: " + this.course.getNumberOfClasses());
         System.out.println("Process tact: " + this.computer.getProcessTact());
         System.out.println("Memory: " + this.computer.getMemory());
-        System.out.println("Hard driver: " + this.computer.getHardDrive());
+        System.out.println("Hard drive: " + this.computer.getHardDrive());
     }
 
 }
