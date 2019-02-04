@@ -1,8 +1,8 @@
 
-package students;
+package student;
 
 
-public class Students {
+public class Student {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
@@ -49,13 +49,13 @@ public class Students {
         this.yearOfBirth = yearOfBirth;
     }
 
-    public Students() {
+    public Student() {
         this.firstName = "Srdjan";
         this.lastName = "Milosevic";
         this.yearOfBirth = 1993;
     }
     
-    public Students(String firstName, String lastName, int yearOfBirth) {
+    public Student(String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
