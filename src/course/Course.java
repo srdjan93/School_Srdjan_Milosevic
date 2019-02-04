@@ -1,11 +1,10 @@
-
 package course;
 
-
 public class Course {
-  private String name;
-  private int numberOfClasses;
-  private String codeName;
+
+    private String name;
+    private int numberOfClasses;
+    private String codeName;
 
     /**
      * @return the name
@@ -48,7 +47,18 @@ public class Course {
     public void setCodeName(String codeName) {
         this.codeName = codeName;
     }
-    
-    
-    
+//constuctors
+    public Course() {
+        this.name = "QA";
+        this.numberOfClasses = 1;
+        this.codeName = "cubes2019";
+
+    }
+
+    public Course(String name, int numberOfClasses, String codeName) {
+        this.name = name;
+        this.numberOfClasses = numberOfClasses;
+        this.codeName = codeName;
+    }
+
 }
